@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Sign in page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <div class="container" id="netflixsignup">
+      <div class="netflix-logo">
+        <iconify-icon icon="logos:netflix"></iconify-icon>
+      </div>
+      <div class="container-overlay flex">
+        <div class="card flex">
+          <h2>Sign in</h2>
+          <input type="text" placeholder="Email or phone number" />
+          <input v-bind:type="type" placeholder="Password" />
+          <div class="password-icon">
+            <button v-on:click="showPassword()">
+              <iconify-icon v-bind:icon="eye"></iconify-icon>
+            </button>
+          </div>
+          <button class="signin" v-on:click="signIn()">Sign in</button>
+          <div class="remember-help flex">
+            <label for="remember" class="flex">
+              <input type="checkbox" id="remember" />
+              Remember me
+            </label>
+            <p>Need help?</p>
+          </div>
+          <p>New to Netflix? <a href="#">Sign up now</a></p>
+          <p>
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot. <a href="#"> Learn more.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/js/script.js"></script>
+  </body>
+</html>
