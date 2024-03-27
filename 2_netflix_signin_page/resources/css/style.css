@@ -148,7 +148,7 @@ a:hover {
   .netflix-logo {
     left: 50%;
     transform: translateX(-50%);
-    top: 40px;
+    top: 25px;
     font-size: 35px;
   }
 }
