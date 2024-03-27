@@ -1,136 +1,154 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  .container {
-    width: 100dvw;
-    height: 100dvh;
-    background: url("https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg");
-    background-size: cover;
-    position: relative;
-  }
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  .container-overlay {
-    position: absolute;
-    width: 100dvw;
-    height: 100dvh;
-    background-color: rgba(0, 0, 0, 0.61);
-  }
-  .card {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    row-gap: 25px;
-    background-color: rgba(0, 0, 0, 0.863);
-    width: 380px;
-    height: 480px;
-    border-radius: 5px;
-    padding: 45px;
-    position: relative;
-  }
-  .card h2 {
-    color: white;
-    font-size: 25px;
-  }
-  .card input[type="text"],
-  .card input[type="password"] {
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 12px 15px;
-    background-color: #333333;
-    border-radius: 4px;
-    color: white;
-    border: 1px solid #333333;
-  }
-  .card input[type="text"]:focus,
-  .card input[type="password"]:focus {
-    border: 1px solid white;
-  }
-  .card .password-icon {
-    position: absolute;
-    bottom: 259px;
-    right: 55px;
-  }
-  .card .password-icon button {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 20px;
-    color: white;
-  }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-  .card .signin {
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 12px 15px;
-    border-radius: 4px;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    border: 1px solid #333333;
-    transition: 0.2s;
-  }
-  .card .signin:hover {
-    background-color: transparent;
-    border: 1px solid red;
-    color: red;
-  }
-  .card .remember-help {
-    width: 100%;
-    justify-content: space-between;
-    color: #b0aeae;
-    font-size: 14px;
-  }
-  .card .remember-help label {
-    column-gap: 5px;
-  }
-  .card .remember-help input[type="checkbox"] {
-    accent-color: red;
-  }
-  .card > p {
-    color: #b0aeae;
-    font-size: 12px;
-  }
+.container {
+  width: 100dvw;
+  height: 100dvh;
+  background: url("https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container-overlay {
+  position: absolute;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.card {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 25px;
+  background-color: rgba(0, 0, 0, 0.863);
+  width: 380px;
+  height: 480px;
+  border-radius: 5px;
+  padding: 45px;
+  position: relative;
+}
+
+.card h2 {
+  color: white;
+  font-size: 25px;
+}
+
+.card input[type="text"],
+.card input[type="password"] {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #333333;
+  border-radius: 4px;
+  color: white;
+  border: 1px solid #333333;
+}
+
+.card input[type="text"]:focus,
+.card input[type="password"]:focus {
+  border: 1px solid white;
+}
+
+.card .password-icon {
+  position: absolute;
+  bottom: 259px;
+  right: 55px;
+}
+
+.card .password-icon button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+.card .signin {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 15px;
+  border-radius: 4px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #333333;
+  transition: 0.2s;
+}
+
+.card .signin:hover {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+}
+
+.card .remember-help {
+  width: 100%;
+  justify-content: space-between;
+  color: #b0aeae;
+  font-size: 14px;
+}
+
+.card .remember-help label {
+  column-gap: 5px;
+}
+
+.card .remember-help input[type="checkbox"] {
+  accent-color: red;
+}
+
+.card>p {
+  color: #b0aeae;
+  font-size: 12px;
+}
+
+.netflix-logo {
+  position: absolute;
+  font-size: 40px;
+  z-index: 20;
+}
+
+@media screen and (min-width: 1024px) {
   .netflix-logo {
-    position: absolute;
-    font-size: 40px;
-    z-index: 20;
+    left: 40px;
+    top: 40px;
   }
-  @media screen and (min-width: 1024px) {
-    .netflix-logo {
-      left: 40px;
-      top: 40px;
-    }
-  }
+}
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .netflix-logo {
-      left: 40px;
-      top: 40px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .netflix-logo {
+    left: 40px;
+    top: 40px;
   }
+}
 
-  @media screen and (max-width: 767px) {
-    .netflix-logo {
-      left: 50%;
-      transform: translateX(-50%);
-      top:20px;
-      font-size:35px;
-    }
+@media screen and (max-width: 767px) {
+  .netflix-logo {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    font-size: 35px;
   }
+}
