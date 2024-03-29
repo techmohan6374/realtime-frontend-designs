@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 450px;
+  min-height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+
+.header {
+  font-size: 80px;
+}
+
+.text-style {
+  text-align: center;
+  font-weight: lighter;
+  user-select: none;
+}
+
+.card h4 {
+  font-size: 24px;
+  margin: -15px 0px 5px 0px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin: 15px 0px 25px 0px;
+  position: relative;
+  height: 50px;
+}
+
+.form-group .input-box {
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+  padding: 10px 15px;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 15px;
+}
+
+.form-group .label-box {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  font-size: 15px;
+  color: gray;
+  transition: 0.2s;
+  z-index: -5;
+}
+
+.input-box:focus+.label-box {
+  top: -12px;
+  left: 12px;
+  background-color: white;
+  padding: 5px;
+  z-index: 50;
+  color: #1a73e8;
+  font-weight: 200;
+}
+
+.input-box:focus {
+  border: 2px solid #1a73e8;
+}
+
+.input-box:not(:focus):valid+.label-box {
+  top: -12px;
+  background-color: white;
+  z-index: 50;
+}
+
+.show {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.show label {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-size: 15px;
+}
+
+footer button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1a73e8;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+footer button:hover {
+  background-color: #1b66c9;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 370px;
+    min-height: 450px;
+    padding: 20px;
+  }
+}

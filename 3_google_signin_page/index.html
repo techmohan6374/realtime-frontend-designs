@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Signin Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="resources/css/style.css">
+</head>
+
+<body>
+  <div class="container flex" id="googlesignup">
+    <form action="#" class="card">
+      <div class="header flex">
+        <iconify-icon icon="devicon:google-wordmark"></iconify-icon>
+      </div>
+      <h4 class="text-style">Sign in</h4>
+      <p class="text-style">Use your Google Account</p>
+      <div class="form-group">
+        <input type="text" class="input-box" required>
+        <label class="label-box">Email or phone</label>
+      </div>
+      <div class="form-group">
+        <input :type="showPassword" class="input-box" id="txtPassword" required>
+        <label class="label-box">Enter your password</label>
+      </div>
+      <div class="show">
+        <input type="checkbox" id="show" v-model="checked">
+        <label for="show">Show Password</label>
+      </div>
+      <footer>
+        <a href="#">Forgot password?</a>
+        <button v-on:click="signIn">Login</button>
+      </footer>
+    </form>
+  </div>
+  <script src="resources/js/script.js"></script>
+</body>
+
+</html>
