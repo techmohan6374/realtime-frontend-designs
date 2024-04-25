@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Login Page</title>
+
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+  <!-- Iconify Icon CDN -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="resources/css/style.css">
+</head>
+
+<body>
+
+  <div class="container flex">
+    <div class="login-card">
+      <div class="chatgpt-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/ChatGPT-Logo.png" alt="">
+      </div>
+      <h1>Welcome back</h1>
+      <div class="input">
+        <input class="form-styles" id="loginemail" type="text" required>
+        <label for="loginemail">Email address</label>
+      </div>
+      <button class="form-styles" id="loginBtn">Continue</button>
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+      <div class="horizontal-line">
+        <h6>OR</h6>
+      </div>
+      <div class="social-media-login flex">
+        <div class="google flex">
+          <iconify-icon icon="flat-color-icons:google" width="1.2rem" height="1.2rem"></iconify-icon>
+          <p>Continue with Google</p>
+        </div>
+        <div class="microsoft flex">
+          <iconify-icon icon="logos:microsoft-icon" width="1.2rem" height="1.2rem"></iconify-icon>
+          <p>Continue with Microsoft Account</p>
+        </div>
+        <div class="apple flex">
+          <iconify-icon icon="ri:apple-fill" width="1.2rem" height="1.2rem"></iconify-icon>
+          <p>Continue with Apple</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JS Link -->
+  <script src="resources/js/script.js"></script>
+</body>
+
+</html>
