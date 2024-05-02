@@ -13,8 +13,7 @@
 }
 
 .spotify-body {
-    background: rgb(41, 41, 41);
-    background: linear-gradient(180deg, rgba(41, 41, 41, 1) 0%, rgba(2, 2, 2, 1) 100%);
+    background-color:#1b1b1b;    
 }
 
 .card {
